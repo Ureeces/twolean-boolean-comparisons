@@ -50,7 +50,7 @@ function differentPeople(name1, name2) {
 }
 
 function isMiddleSchoolTeacher(role, level) {
-  return role === "teacher" && (9 > level && level > 5);
+  return isTeacher(role) && (9 > level && level > 5);
 }
 
 function notAnElementarySchoolAdministrator(level, role) {
