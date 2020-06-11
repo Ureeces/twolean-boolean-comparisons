@@ -45,8 +45,8 @@ function isElementary(role) {
   return role === "elementary";
 }
 
-function differentPeople(name1, name2) {
-  return !(name1 === name2);
+function areDifferentPeople(name1, name2) {
+  return name1 !== name2;
 }
 
 function isMiddleSchoolTeacher(role, level) {
@@ -112,8 +112,8 @@ if (typeof isElementary === 'undefined') {
   isElementary = undefined;
 }
 
-if (typeof differentPeople === 'undefined') {
-  differentPeople = undefined;
+if (typeof areDifferentPeople === 'undefined') {
+  areDifferentPeople = undefined;
 }
 
 if (typeof notAnElementarySchoolAdministrator === 'undefined') {
@@ -137,7 +137,7 @@ module.exports = {
   isTeacher,
   isAdmin,
   isElementary,
-  differentPeople,
+  areDifferentPeople,
   notAnElementarySchoolAdministrator,
   isMiddleSchoolTeacher,
 }
